@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم الجلال الفاخر | تعز</title>
+    <!-- خطوط جوجل الاحترافية (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- أيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ربط ملف الستايل الخارجي -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- --- 1. شريط التنقل العلوي (Navbar) --- -->
+    <header id="mainHeader">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>مطعم الجلال</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero">الرئيسية</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#menu">قائمة الطعام</a></li>
+                <li><a href="#gallery">المعرض</a></li>
+                <li><a href="#testimonials">الآراء</a></li>
+                <li><a href="#contact">الحجوزات</a></li>
+            </ul>
+            <a href="#contact" class="btn-gold nav-btn">احجز طاولتك</a>
+        </nav>
+    </header>
+
+    <!-- --- 2. قسم الترحيب الرئيسي (Hero Section) --- -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <span>مرحباً بكم في واحة المذاق الأصيل</span>
+            <h1>فخامة الضيافة في قلب <em>تعز</em></h1>
+            <p>نأخذك في رحلة طهي ساحرة تجمع بين عراقة التقاليد اليمنية ولمسات الحداثة العالمية في أجواء ملكية لا تُنسى.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-gold">اكتشف القائمة</a>
+                <a href="#contact" class="btn-outline">احجز الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- --- 3. قسم من نحن (About Section) --- -->
+        <section id="about" class="about-section">
+            <div class="about-wrapper">
+                <div class="about-text">
+                    <h3>قصة شغف بالطهي الفاخر</h3>
+                    <p>منذ تأسيسنا في مدينة تعز التاريخية، أخذنا على عاتقنا تقديم تجربة طعام استثنائية تفوق التوقعات. نحن لا نقدم مجرد وجبات، بل نصنع ذكريات تدوم عبر اختيار أجود المكونات المحلية الطازجة وطهيها بأيدي أمهر الطهاة.</p>
+                    <p>نتميز بتقديم أطباقنا في بيئة راقية تعكس كرم الضيافة اليمنية الأصيلة مع الحفاظ على أعلى معايير الجودة والنظافة العالمية.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-award"></i>
+                            <span>طهاة عالميون</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-carrot"></i>
+                            <span>مكونات طازجة 100%</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>أجواء فاخرة هادئة</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <span>خدمة ملكية متميزة</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-box">
+                        <!-- تعديل: صورة قسم من نحن -->
+                        <img src="images/أطباق_فاخرة.jpg" alt="أطباق فاخرة">
+                        <div class="image-experience">
+                            <h4>+15</h4>
+                            <p>عاماً من التميز</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- --- 4. قسم قائمة الطعام (Menu Section) --- -->
+    <section id="menu" class="menu-section container">
+        <div class="section-title">
+            <h2>قائمة الطعام الفاخرة</h2>
+            <p>اختر من بين تشكيلاتنا الساحرة المعدة بكل حب وشغف</p>
+        </div>
+
+        <div class="menu-tabs">
+            <button class="tab-btn active" data-filter="all">الكل</button>
+            <button class="tab-btn" data-filter="traditional">أطباق يمنية</button>
+            <button class="tab-btn" data-filter="grills">مشاوي فاخرة</button>
+            <button class="tab-btn" data-filter="desserts">الحلويات</button>
+        </div>
+
+        <div class="menu-grid">
+            <!-- طبق 1 -->
+            <div class="menu-card" data-category="traditional">
+                <div class="menu-img-container">
+                    <!-- تعديل: صورة المندي -->
+                    <img src="images/مندي_لحم_بلدي.jpg" alt="مندي لحم بلدي">
+                    <span class="menu-badge">الأكثر طلباً</span>
+                </div>
+                <div class="menu-info">
+                    <div class="menu-title-price">
+                        <h4>مندي لحم بلدي فاخر</h4>
+                        <span class="menu-price">$25</span>
+                    </div>
+                    <p>لحم بلدي طازج مطهو تحت الأرض على الطريقة التقليدية مع الأرز البسمتي المبهر بالزعفران.</p>
+                    <div class="menu-footer">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <button class="order-btn">اطلب الآن <i class="fas fa-arrow-left"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- طبق 2 -->
+            <div class="menu-card" data-category="grills">
+                <div class="menu-img-container">
+                    <!-- تعديل: صورة المشاوي -->
+                    <img src="images/مشاوي_مشكلة.jpg" alt="مشاوي مشكلة">
+                </div>
+                <div class="menu-info">
+                    <div class="menu-title-price">
+                        <h4>كباب ريش مشكل ملكي</h4>
+                        <span class="menu-price">$30</span>
+                    </div>
+                    <p>تشكيلة فاخرة من الكباب، الشيش طاووق، والريش المتبلة بخلطتنا السرية والمشوية على الفحم.</p>
+                    <div class="menu-footer">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <button class="order-btn">اطلب الآن <i class="fas fa-arrow-left"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- طبق 3 -->
+            <div class="menu-card" data-category="desserts">
+                <div class="menu-img-container">
+                    <!-- تعديل: صورة الحلويات -->
+                    <img src="images/فتة_عسل.jpg" alt="حلويات شرقية">
+                </div>
+                <div class="menu-info">
+                    <div class="menu-title-price">
+                        <h4>فتة عسل مع قشطة بلدي</h4>
+                        <span class="menu-price">$12</span>
+                    </div>
+                    <p>خبز بر يمني ساخن ومهروس مع السمن الخولاني الأصيل، القشطة الطازجة، ومغطى بالعسل السدر الفاخر.</p>
+                    <div class="menu-footer">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <button class="order-btn">اطلب الآن <i class="fas fa-arrow-left"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 5. قسم معرض الصور الفاخر (Gallery Section) --- -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>معرض الفخامة</h2>
+                <p>جولة بصرية سريعة داخل أروقة مطعمنا ومطبخنا</p>
+            </div>
+            <div class="gallery-grid">
+                <!-- تعديل: صور المعرض الأربعة -->
+                <div class="gallery-item">
+                    <img src="images/الصالة_الملكية.jpg" alt="صالة الطعام">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>الصالة الملكية</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/إعداد_الأطباق.jpg" alt="تجهيز الطعام">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>إعداد الأطباق</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/الجلسات_التراثية.jpg" alt="الجلسات العربية">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>الجلسات التراثية</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/الخدمة_الفاخرة.jpg" alt="الخدمة للزبائن">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>الخدمة الفاخرة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 6. قسم التقييمات وآراء الزوار (Testimonials) --- -->
+    <section id="testimonials" class="testimonials-section container">
+        <div class="section-title">
+            <h2>قالوا عن الجلال</h2>
+            <p>نعتز بشهادات عملائنا الكرام ونعمل دائماً لنكون عند حسن الظن</p>
+        </div>
+        <div class="testimonial-grid">
+            <!-- تعديل: صور آراء الزوار الثلاثة -->
+            <div class="testi-card">
+                <i class="fas fa-quote-right window-icon quote-icon"></i>
+                <div class="testi-user">
+                    <img src="images/أحمد_الوجيه.jpg" alt="أحمد الوجيه">
+                    <div>
+                        <h5>أحمد الوجيه</h5>
+                        <span>زائر دائم</span>
+                    </div>
+                </div>
+                <p>"بصراحة أفضل مطعم في تعز بدون منازع! المندي لا يُعلى عليه ونظافة المكان والخدمة سريعة جداً وراقية. أنصح به بشدة لكل زائر للمدينة."</p>
+            </div>
+
+            <div class="testi-card">
+                <i class="fas fa-quote-right window-icon quote-icon"></i>
+                <div class="testi-user">
+                    <img src="images/عمر_السامعي.jpg" alt="عمر السامعي">
+                    <div>
+                        <h5>عمر السامعي</h5>
+                        <span>رجل أعمال</span>
+                    </div>
+                </div>
+                <p>"أجواء هادئة وفاخرة جداً، مناسب جداً لعزائم العمل والعائلات. المشاوي مشكلة عندهم لها طعم ونكهة مميزة جداً تحس بالأصالة والاتقان."</p>
+            </div>
+
+            <div class="testi-card">
+                <i class="fas fa-quote-right window-icon quote-icon"></i>
+                <div class="testi-user">
+                    <img src="images/فاطمة_العبسي.jpg" alt="فاطمة العبسي">
+                    <div>
+                        <h5>فاطمة العبسي</h5>
+                        <span>ناقدة طعام</span>
+                    </div>
+                </div>
+                <p>"الديكور الأسود والذهبي يعطي شعوراً بالفخامة والملكية منذ اللحظة الأولى. جربت الحلا الفتة بالقشطة وكان خيالياً وموزوناً. تجربة رائعة."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- 7. قسم الحجز والتواصل (Booking & Contact Section) --- -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>احجز طاولتك الفاخرة</h2>
+                <p>تفضل بحجز مقعدك مسبقاً لضمان توفير أفضل خدمة تليق بك</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="booking-form-container">
+                    <h3>استمارة الحجز الإلكتروني</h3>
+                    <form action="#">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">الاسم الكريم</label>
+                                <input type="text" id="name" placeholder="اسمك الكامل" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">رقم الهاتف</label>
+                                <input type="tel" id="phone" placeholder="77xxxxxxx" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">التاريخ</label>
+                                <input type="date" id="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">عدد الأفراد</label>
+                                <select id="guests">
+                                    <option value="1">شخص واحد</option>
+                                    <option value="2">شخصين</option>
+                                    <option value="4">4 أشخاص</option>
+                                    <option value="5+">عائلة (أكثر من 5)</option>
+                                </select>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="notes">ملاحظات أو طلبات خاصة</label>
+                                <textarea id="notes" rows="4" placeholder="مثال: جلسة عائلية مغلقة، الاحتفال بمناسبة خاصة..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-gold">تأكيد حجز الطاولة</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-container">
+                    <div class="info-box-wrapper">
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>موقعنا في تعز</h4>
+                                <p>شارع جمال، جولة العواضي، بجانب المركز التجاري، تعز - اليمن</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>اتصل بنا مباشرة</h4>
+                                <p>+967 4 250000 | +967 777777777</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>أوقات العمل</h4>
+                                <p>يومياً من الساعة 11:00 صباحاً وحتى 12:00 منتصف الليل</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- تعديل: صورة الخريطة التقريبية الفخمة -->
+                    <div class="map-mock">
+                        <img src="images/الخريطة.jpg" alt="خريطة الموقع التقريبية" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; opacity: 0.7;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ربط ملف الجافاسكريبت الخارجي -->
+    <script src="script.js"></script>
+</body>
+</html>
